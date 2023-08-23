@@ -7,8 +7,8 @@ require("hardhat-deploy")
 //require("@nomicfoundation/hardhat-toolbox")
 /** @type import('hardhat/config').HardhatUserConfig */
 
-const ALCHEMY_API_KEY="FhLYzxi6-bkWbNJ069gQBzb8f91skG_i"
-const SEPOLIA_PRIVATE_KEY="e886a46e62c69304eb3e294718ffb2e9df8849c381a98827284669b2fe9b3038"
+const ALCHEMY_API_KEY=process.env.ALCHEMY_API_KEY
+const SEPOLIA_PRIVATE_KEY=process.env.SEPOLIA_PRIVATE_KEY
 const COINMARKET_API_KEY=process.env.COINMARKET_API_KEY
 const ETHERSCAN_API_KEY=process.env.ETHERSCAN_API_KEY
 task("accounts", "Prints the list of accounts", async () => {
